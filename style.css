@@ -5,6 +5,7 @@
   --col01: #222323;
   --col02: #f0f6f0;
   --border: solid 4px var(--col02);
+  font-size: 20px;
 }
 /* Change custom properties if user prefers light mode */
 @media (prefers-color-scheme: light) {
@@ -20,8 +21,11 @@ body {
   color: var(--col02);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /*align-items: center;*/
   gap: 1rem;
+  max-width: 1280px;
+  padding: 0 3rem;
+  margin: 0 auto;
 }
 
 main {
@@ -35,6 +39,19 @@ main {
 
 hr{
   width: 10%;
+}
+
+li{
+  margin-bottom: 2rem;
+}
+
+li img {
+  margin: 1rem 0;
+}
+
+pre {
+  color: #BCBEC4FF;
+  background-color: #191A1C;
 }
 
 footer {
