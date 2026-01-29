@@ -4,6 +4,7 @@
   /* based 1 bit monitor glow by Polyducks https://lospec.com/palette-list/1bit-monitor-glow */
   --col01: #222323;
   --col02: #f0f6f0;
+  --col03: #fdf49e;
   --border: solid 4px var(--col02);
   font-size: 20px;
 }
@@ -22,7 +23,7 @@ body {
   display: flex;
   flex-direction: column;
   /*align-items: center;*/
-  gap: 1rem;
+  gap: 2rem;
   max-width: 1280px;
   padding: 0 3rem;
   margin: 0 auto;
@@ -45,18 +46,58 @@ section {
 }
 
 hr{
-  width: 10%;
+  color: var(--col02);
+  border-width: 1px;
+  border-style: solid;
+  width: 100%;
 }
 
-li{
+ol, ul {
+  list-style-position: inside;
+}
+
+ul > li {
   margin-bottom: 2rem;
+}
+ul > li:last-of-type {
+  margin-bottom: 0;
+}
+
+ol > li {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--col02);
+}
+ol > li:last-of-type {
+  border-bottom: 0;
+}
+
+li > ol {
+  margin: 2rem 0;
+  padding-left: 1.5rem;
+  list-style: lower-alpha;
+}
+
+li > ol > li {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
 }
 
 li img {
   margin: 1rem 0;
 }
 
+li strong {
+  line-height: 2rem;
+}
+
+mark {
+  background-color: var(--col03);
+}
+
 pre {
+  margin: 1rem 0;
   color: #BCBEC4FF;
   background-color: #191A1C;
 }
