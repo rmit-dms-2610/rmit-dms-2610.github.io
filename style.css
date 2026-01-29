@@ -26,6 +26,7 @@ body {
   max-width: 1280px;
   padding: 0 3rem;
   margin: 0 auto;
+  line-height: 1.5;
 }
 
 main {
@@ -35,6 +36,12 @@ main {
   align-items: center;
   gap: 2rem;
   padding-top: 1rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 hr{
@@ -52,6 +59,18 @@ li img {
 pre {
   color: #BCBEC4FF;
   background-color: #191A1C;
+}
+
+/* for folder structure diagram */
+details {
+  width: fit-content;
+}
+
+details > details {
+  padding-left: 20px;
+}
+summary {
+  cursor: pointer;
 }
 
 footer {
