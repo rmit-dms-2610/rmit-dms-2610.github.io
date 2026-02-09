@@ -118,3 +118,7 @@ footer {
   background-color: var(--col02);
   color: var(--col01);
 }
+
+.underlined {
+  text-decoration: underline;
+}
