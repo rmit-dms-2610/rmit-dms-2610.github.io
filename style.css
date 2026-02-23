@@ -49,8 +49,9 @@ main {
   align-items: stretch;
   gap: 2rem;
   padding-top: 1rem;
+  width: 100vw;
   max-width: 1280px;
-  margin: 0 2rem;
+  margin: 0 auto;
 }
 section {
 
@@ -107,6 +108,11 @@ pre {
   margin: 1rem 0;
   color: #BCBEC4FF;
   background-color: #191A1C;
+  white-space: pre-wrap;
+}
+
+code {
+  width: 100%;
 }
 
 .linkHighlight {
