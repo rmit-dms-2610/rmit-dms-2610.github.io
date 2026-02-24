@@ -15,98 +15,104 @@
     <link rel="icon" href="./assets/icons/favicon.png" type="image/png">
 </head>
 <body>
-    <h1>Setup Guide : Mediated Expression</h1>
-    <h3>RMIT Digital Media Studio 2610</h3>
-    <hr>
-    <p>
-        This page contains a brief recap of setting up our software and deploying our first webpage. This is assuming
-        you are using your own computer, skip step one if you're on a Uni computer.
-    </p>
-    <hr>
-    <ol>
-        <li>
-            <strong>Download and install Required Software:</strong> <br>
-            <ul>
-                <li>
-                    <a href="https://desktop.github.com/download/" target="_blank">GitHub Desktop</a> - used for
-                    versioning and git respository management.
-                </li>
-                <li>
-                    <a href="https://www.jetbrains.com/webstorm/" target="_blank">WebStorm</a> - used to write web code.
-                    I will be teaching using WebStorm however you can use any integrated development environment (IDE)
-                    that you prefer.
-                    <a href="https://code.visualstudio.com/download" target="_blank">Visual Studio Code</a> is another
-                    common option.
-                </li>
-                <li>
-                    <a href="https://www.google.com/chrome/" target="_blank">Chrome</a> and
-                    <a href="https://www.firefox.com/en-US/" target="_blank">FireFox</a> - used to test our code. We
-                    will mostly be using Chrome as it's the industry standard for development, however we will also test
-                    using Firefox. If you use a Chromium browser such as Brave please also make sure you have vanilla
-                    Chrome installed.
-                </li>
-            </ul>
-        </li>
-        <li>
-            <strong>Create a GitHub account:</strong> <br>
-            If you don't already have one navigate to <a href="https://github.com/" target="_blank">GitHub</a> and
-            create one. You can use either a student or personal email account.
-        </li>
-        <li>
-            <strong>Create a new GitHub repository:</strong> <br>
-            Navigate to <a href="https://github.com/" target="_blank">GitHub</a> in your browser and make sure you're
-            signed in to your account. Click the plus in the top right corner and select new repository.
-            <img src="./assets/images/newRepo.PNG" alt="new repository UI selection">
-            Name your new repository studioWorkIndex-2610 and make sure the visibility is set to public.
-        </li>
-        <li>
-            <strong>Sign in to GitHub Desktop and clone your new repository:</strong> <br>
-            Launch GitHub Desktop and sign in with your GitHub account. Follow the prompts to authorize GitHub Desktop.
-            Go to the file menu and select 'Clone repository...'. You should see a list of your account's repositories,
-            select the repository you created in the previous step, then make sure you're cloning it to the right
-            location as indicated in the 'Local path' (you should keep all your repositories together). Press the
-            'Clone' button.
-        </li>
-        <li>
-            <strong>Open repository in IDE:</strong> <br>
-            Set your default IDE by going to the file menu, selecting options, and change the external editor in the
-            Integrations tab. If WebStorm doesn't appear you may need to choose custom editor and link the executable in
-            path. Open the repository folder in your IDE by selecting the open in external editor (or Visual Studio
-            Code) option from the repository menu.
-        </li>
-        <li>
-            <strong>Create index.html:</strong> <br>
-            Create a new file in your IDE named "index.html". Press "!" and then "TAB" to add the default HTML skeleton.
-            Add a h1 element inside the body element and give your page a title. Save the index.html file.
-        </li>
-        <li>
-            <strong>Publish update to GitHub:</strong> <br>
-            Go back to GitHub Desktop, in the bottom left write a commit title, something like 'setup index' would be
-            fine. Then hit the 'Commit 1 file to main' button. Finally hit the 'Push origin' or 'Publish origin' button
-            - it's along the top, third from the left. To double-check it worked, navigate to your GitHub account in the
-            browser, select the appropriate repository and check if index.html reflects your changes.
-        </li>
-        <li>
-            <strong>Complete the intro exercise:</strong> <br>
-            Find the full details <a href="./introExercise.html" target="_blank">here</a>. <mark>Remember</mark> to
-            commit your changes and push them to origin using GitHub Desktop when you're done.
-        </li>
-        <li>
-            <strong>Deploy with Netlify:</strong> <br>
-            Navigate to <a href="https://www.netlify.com/" target="_blank">https://www.netlify.com/</a> in your browser
-            and press log in, then select 'Log in with GitHub'. You'll have to authorise this with your GitHub account
-            if it's your first time. Then make sure you're in the projects view (via tab on left) and select 'Add new
-            project' then 'Import an existing project' then click GitHub and authorise the session. You should see a
-            list of your repositories, select the appropriate one (studioWorkIndex-2610 in this case), then you should
-            be able to deploy with the default settings (there's a deploy button near the bottom of the page).
-        </li>
-        <li>
-            <strong>Check live link:</strong> <br>
-            Once your repository is deployed you should be able to see the link to it (it'll be in the top left card
-            with a randomly generated name followed by .netlify.app). Click the link and you should see your index.html
-            page loaded with your answers. It's good to get into the habit of <mark>always</mark> checking the live
-            version after publishing to make sure it works.
-        </li>
-    </ol>
+    <header>
+        <div class="headerFooterContainer">
+            <h1>Mediated Expression : Setup Guide</h1>
+            <h3>RMIT Digital Media Studio 2610</h3>
+        </div>
+    </header>
+
+    <main>
+        <p>
+            This page contains a brief recap of setting up our software and deploying our first webpage - the studio
+            work index. This is assuming you are using your own computer, skip step one if you're on a Uni computer.
+        </p>
+        <hr>
+        <ol>
+            <li>
+                <strong>Download and install Required Software:</strong> <br>
+                <ul>
+                    <li>
+                        <a href="https://desktop.github.com/download/" target="_blank">GitHub Desktop</a> - used for
+                        versioning and git respository management.
+                    </li>
+                    <li>
+                        <a href="https://www.jetbrains.com/webstorm/" target="_blank">WebStorm</a> - used to write web code.
+                        I will be teaching using WebStorm however you can use any integrated development environment (IDE)
+                        that you prefer.
+                        <a href="https://code.visualstudio.com/download" target="_blank">Visual Studio Code</a> is another
+                        common option.
+                    </li>
+                    <li>
+                        <a href="https://www.google.com/chrome/" target="_blank">Chrome</a> and
+                        <a href="https://www.firefox.com/en-US/" target="_blank">FireFox</a> - used to test our code. We
+                        will mostly be using Chrome as it's the industry standard for development, however we will also test
+                        using Firefox. If you use a Chromium browser such as Brave please also make sure you have vanilla
+                        Chrome installed.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <strong>Create a GitHub account:</strong> <br>
+                If you don't already have one navigate to <a href="https://github.com/" target="_blank">GitHub</a> and
+                create one. You can use either a student or personal email account.
+            </li>
+            <li>
+                <strong>Create a new GitHub repository:</strong> <br>
+                Navigate to <a href="https://github.com/" target="_blank">GitHub</a> in your browser and make sure you're
+                signed in to your account. Click the plus in the top right corner and select new repository.
+                <img src="./assets/images/newRepo.PNG" alt="new repository UI selection">
+                Name your new repository studioWorkIndex-2610 and make sure the visibility is set to public.
+            </li>
+            <li>
+                <strong>Sign in to GitHub Desktop and clone your new repository:</strong> <br>
+                Launch GitHub Desktop and sign in with your GitHub account. Follow the prompts to authorize GitHub Desktop.
+                Go to the file menu and select 'Clone repository...'. You should see a list of your account's repositories,
+                select the repository you created in the previous step, then make sure you're cloning it to the right
+                location as indicated in the 'Local path' (you should keep all your repositories together). Press the
+                'Clone' button.
+            </li>
+            <li>
+                <strong>Open repository in IDE:</strong> <br>
+                Set your default IDE by going to the file menu, selecting options, and change the external editor in the
+                Integrations tab. If WebStorm doesn't appear you may need to choose custom editor and link the executable in
+                path. Open the repository folder in your IDE by selecting the open in external editor (or Visual Studio
+                Code) option from the repository menu.
+            </li>
+            <li>
+                <strong>Create index.html:</strong> <br>
+                Create a new file in your IDE named "index.html". Press "!" and then "TAB" to add the default HTML skeleton.
+                Add a h1 element inside the body element and give your page a title. Save the index.html file.
+            </li>
+            <li>
+                <strong>Publish update to GitHub:</strong> <br>
+                Go back to GitHub Desktop, in the bottom left write a commit title, something like 'setup index' would be
+                fine. Then hit the 'Commit 1 file to main' button. Finally hit the 'Push origin' or 'Publish origin' button
+                - it's along the top, third from the left. To double-check it worked, navigate to your GitHub account in the
+                browser, select the appropriate repository and check if index.html reflects your changes.
+            </li>
+            <li>
+                <strong>Complete the intro exercise:</strong> <br>
+                Find the full details <a href="./introExercise.html" target="_blank">here</a>. <mark>Remember</mark> to
+                commit your changes and push them to origin using GitHub Desktop when you're done.
+            </li>
+            <li>
+                <strong id="deploy">Deploy with Netlify:</strong> <br>
+                Navigate to <a href="https://www.netlify.com/" target="_blank">https://www.netlify.com/</a> in your browser
+                and press log in, then select 'Log in with GitHub'. You'll have to authorise this with your GitHub account
+                if it's your first time. Then make sure you're in the projects view (via tab on left) and select 'Add new
+                project' then 'Import an existing project' then click GitHub and authorise the session. You should see a
+                list of your repositories, select the appropriate one (studioWorkIndex-2610 in this case), then you should
+                be able to deploy with the default settings (there's a deploy button near the bottom of the page).
+            </li>
+            <li>
+                <strong>Check live link:</strong> <br>
+                Once your repository is deployed you should be able to see the link to it (it'll be in the top left card
+                with a randomly generated name followed by .netlify.app). Click the link and you should see your index.html
+                page loaded with your answers. It's good to get into the habit of <mark>always</mark> checking the live
+                version after publishing to make sure it works.
+            </li>
+        </ol>
+    </main>
 </body>
 </html>
