@@ -97,8 +97,8 @@
                     Find the full details <a href="./introExercise.html" target="_blank">here</a>. <mark>Remember</mark> to
                     commit your changes and push them to origin using GitHub Desktop when you're done.
                 </li>
-                <li>
-                    <strong id="deploy">Deploy with Netlify:</strong> <br>
+                <li style="text-decoration: line-through">
+                    <strong id="deployOld">Deploy with Netlify:</strong> <br>
                     Navigate to <a href="https://www.netlify.com/" target="_blank">https://www.netlify.com/</a> in your browser
                     and press log in, then select 'Log in with GitHub'. You'll have to authorise this with your GitHub account
                     if it's your first time. Then make sure you're in the projects view (via tab on left) and select 'Add new
@@ -107,11 +107,65 @@
                     be able to deploy with the default settings (there's a deploy button near the bottom of the page).
                 </li>
                 <li>
+                    <strong id="deploy">Deploy with Neocities:</strong> <br>
+                    <p>
+                        Unfortunately due to a change in Netlify's free tier it will no longer be fit for purpose for our
+                        work in the studio. As a work around we will be using
+                        <a href="https://neocities.org/" target="_blank">Neocities'</a> free hosting and a custom GitHub
+                        action script to achieve the same result. I've adapted
+                        <a href="https://nenrikido.neocities.org/blog/post/deploy-site/">Nenrikido's tutorial</a>
+                        (OPTION 2) to integrate GitHub with neocities automatically.
+                    </p>
+                    <ol type="a">
+                        <li style="margin-bottom: 1rem">
+                            Navigate to <a href="https://neocities.org/" target="_blank">Neocities</a> and sign up for a
+                            free account. Note that your chosen username will be part of the URL - for example I chose
+                            p-hase, which made my home site https://p-hase.neocities.org/
+                        </li>
+                        <li style="margin-bottom: 1rem">
+                            Now we need to add a GitHub action - this is a set of instructions that will run whenever we
+                            push changes to our repository, telling Neocities to update the website code. Inside of your
+                            studioWorkIndex website folder we need to create a new folder called exactly ".github", then
+                            a folder inside of .github called exactly "workflows", then finally a file inside of workflows
+                            called exactly "neocities.yml" - see pic below:
+                            <img src="./assets/images/newGithubAction.png" alt="new github action folder structure">
+                        </li>
+                        <li style="margin-bottom: 1rem">
+                            Navigate to
+                            <a href="https://github.com/p-mcmahon-rmit/mix-scroll-prototype/blob/main/.github/workflows/neocities.yml" target="_blank">
+                                this prewritten action file
+                            </a>
+                            , copy the contents, and then paste it into your own newly created neocities.yml file.
+                        </li>
+                        <li style="margin-bottom: 1rem">
+                            If we look at line 37 we can see that the action wants to get an api_key from
+                            secrets.NEOCITIES_API_TOKEN. When we use something secure like an API key we never want to
+                            save it directly in our repo. Instead we save it as a "secret" which only our code can read.
+                            Navigate to our studioWorkIndex repository in the browser, select settings, then in the
+                            security section of the lefthand sidebar click Secrets and variables, then select actions. We
+                            to add a new secret here, which will be named exactly NEOCITIES_API_TOKEN to match our code,
+                            and will contain the key we are about to find.
+                        </li>
+                        <li style="margin-bottom: 1rem">
+                            To find our key we need to navigate to https://neocities.org/settings/{your-sitename}#api_key
+                            - so for me that would be https://neocities.org/settings/p-hase#api_key. Once there you should
+                            be able to generate a new key, and then copy and paste it into your GitHub secret.
+                        </li>
+                        <li style="margin-bottom: 1rem">
+                            That's pretty much it - once you've saved the secret, and pushed the
+                            ./.github/workflows/neocities.yml file to your repository it should automatically populate
+                            your Neocities site! It will also automatically update with any new changes once you've
+                            pushed them to that repository.
+                        </li>
+                    </ol>
+                </li>
+                <li>
                     <strong>Check live link:</strong> <br>
-                    Once your repository is deployed you should be able to see the link to it (it'll be in the top left card
-                    with a randomly generated name followed by .netlify.app). Click the link and you should see your index.html
-                    page loaded with your answers. It's good to get into the habit of <mark>always</mark> checking the live
-                    version after publishing to make sure it works.
+                    Once your repository is deployed you should be able to <span style="text-decoration: line-through">
+                    see the link to it (it'll be in the top left card with a randomly generated name followed by
+                    .netlify.app)</span> access it via your username URL - eg https://p-hase.neocities.org/. You should
+                    see your index.html page loaded with your answers. It's good to get into the habit of
+                    <mark>always</mark> checking the live version after publishing to make sure it works.
                 </li>
             </ol>
         </section>
