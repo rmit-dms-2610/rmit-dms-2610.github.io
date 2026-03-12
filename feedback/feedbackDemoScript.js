@@ -4,10 +4,13 @@ let col01 = bodyStyles.getPropertyValue("--col01");
 let col02 = bodyStyles.getPropertyValue("--col02");
 
 /* set up stage */
+
+let sectionWidth = Math.min(window.innerWidth - 80, 1280);
+
 let stage = new Konva.Stage({
   container: "stageContainer",
-  width: window.innerWidth * 0.8,
-  height: window.innerWidth * 0.25,
+  width: sectionWidth,
+  height: sectionWidth * 0.25,
 });
 
 /////////////////////////////////////////////////////// Group 1 Drawing Canvas
@@ -21,7 +24,7 @@ let groupOne = new Konva.Group();
 let backgroundRectOne = new Konva.Rect({
   x: 0,
   y: 0,
-  width: window.innerWidth * 0.25,
+  width: sectionWidth * 0.25,
   height: stage.height(),
   fill: col01,
   stroke: col02,
@@ -102,9 +105,9 @@ groupOne.on("mouseout", (e) => {
 let groupTwo = new Konva.Group();
 
 let backgroundRectTwo = new Konva.Rect({
-  x: stage.width() / 2 - window.innerWidth * 0.125,
+  x: stage.width() / 2 - sectionWidth * 0.125,
   y: 0,
-  width: window.innerWidth * 0.25,
+  width: sectionWidth * 0.25,
   height: stage.height(),
   fill: col01,
   stroke: col02,
@@ -135,9 +138,9 @@ layerOne.add(groupTwo);
 let groupThree = new Konva.Group();
 
 let backgroundRectThree = new Konva.Rect({
-  x: stage.width() - window.innerWidth * 0.25,
+  x: stage.width() - sectionWidth * 0.25,
   y: 0,
-  width: window.innerWidth * 0.25,
+  width: sectionWidth * 0.25,
   height: stage.height(),
   fill: col01,
   stroke: col02,
@@ -145,7 +148,7 @@ let backgroundRectThree = new Konva.Rect({
 });
 
 let crossCursor = new Konva.Star({
-  x: stage.width() - window.innerWidth * 0.125,
+  x: stage.width() - sectionWidth * 0.125,
   y: stage.height() / 2,
   numPoints: 4,
   innerRadius: 0,
