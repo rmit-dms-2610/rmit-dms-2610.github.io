@@ -28,8 +28,8 @@
         <h2>Feedback Experiment</h2>
         <h3>Brief:</h3>
         <p>
-            Style and add feedback to your single button synthesizer to make it an engaging experience. Don't add any
-            additional HTML elements, but instead experiment with CSS and JavaScript.
+            Style and add feedback to your single button synthesizer to make it an engaging experience. While you can
+            add additional HTML elements, focus on experimenting with what might be added using CSS and JavaScript.
         </p>
     </section>
 
@@ -37,8 +37,23 @@
         <h3>Instructions:</h3>
         <ol>
             <li>
-                Create a new repository using the toneTemplate-DMS2610 you created in class as a template. Make sure
-                you're the owner, give it a descriptive name, and make sure it's set to public.
+                In your file explorer find the toneTemplate folder for the project folder created together in class.
+                Copy this folder into your studioWorkIndex website folder and rename it "feedbackDesignExperiment".
+            </li>
+
+            <li>
+                We need to do some quick cleanup to make this work properly. First delete the ".idea" folder inside of
+                this new feedbackDesignExperiment folder (only there on WebStorm). Then change the names of the style.css,
+                and main.js to something specific like "feedbackStyle.css" and "feedbackMain.js". You'll also have to
+                double check the link and script import tags in the index.html file (in the feedbackDesignExperiment folder)
+                to make sure they reference the new name. You can also delete the reset.css file inside of
+                feedbackDesignExperiment and update the link href to "../reset.css" so it can find your reset inside of
+                the main folder.
+            </li>
+
+            <li>
+                Add a link to your experiment on your work index home page using an a element. The href should be
+                <span style="white-space: nowrap;">"./feedbackDesignExperiment"</span>.
             </li>
 
             <li>
@@ -69,12 +84,7 @@
             </li>
 
             <li>
-                Once you are finished publish the repository using Netlify. If you need a reminder of how this works check
-                out the <a href="setupGuide.html#deploy">Setup Guide</a>
-            </li>
-
-            <li>
-                Finally don't forget to add a link to your experiment to your Studio Work Index.
+                Finally don't forget to check your work in browsers - both Firefox and Chrome if you can.
             </li>
         </ol>
     </section>
