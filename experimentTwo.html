@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Experiment Two - Mediated Expression</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- from Microsoft Windows 2.03 Paint -->
+    <!-- https://commons.wikimedia.org/wiki/File:Windows_2.03_PAINT_01.png -->
+    <link rel="icon" href="./assets/icons/favicon.png" type="image/png">
+</head>
+<body>
+<header>
+    <div class="headerFooterContainer">
+        <h1>Mediated Expression : Experiment Two</h1>
+        <h3>RMIT Digital Media Studio 2610</h3>
+    </div>
+</header>
+
+<main>
+
+    <section>
+        <h2>Feedback Experiment</h2>
+        <h3>Brief:</h3>
+        <p>
+            Style and add feedback to your single button synthesizer to make it an engaging experience. While you can
+            add additional HTML elements, focus on experimenting with what might be added using CSS and JavaScript.
+        </p>
+    </section>
+
+    <section>
+        <h3>Instructions:</h3>
+        <ol>
+            <li>
+                In your file explorer find the toneTemplate folder for the project folder created together in class.
+                Copy this folder into your studioWorkIndex website folder and rename it "feedbackDesignExperiment".
+            </li>
+
+            <li>
+                We need to do some quick cleanup to make this work properly. First delete the ".idea" folder inside of
+                this new feedbackDesignExperiment folder (only there on WebStorm). Then change the names of the style.css,
+                and main.js to something specific like "feedbackStyle.css" and "feedbackMain.js". You'll also have to
+                double check the link and script import tags in the index.html file (in the feedbackDesignExperiment folder)
+                to make sure they reference the new name. You can also delete the reset.css file inside of
+                feedbackDesignExperiment and update the link href to "../reset.css" so it can find your reset inside of
+                the main folder.
+            </li>
+
+            <li>
+                Add a link to your experiment on your work index home page using an a element. The href should be
+                <span style="white-space: nowrap;">"./feedbackDesignExperiment"</span>.
+            </li>
+
+            <li>
+                Modify the existing CSS and JavaScript files to add a general layout/style, and then add your feedback.
+            </li>
+
+            <li>
+                Think about how the button click can be broken down into discrete parts. For CSS this includes the
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:hover" target="_blank">:hover</a>,
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:hover" target="_blank">:active</a> and
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:hover" target="_blank">:focus</a>
+                pseudo-classes. For JavaScript eventListeners this includes the
+                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseenter_event" target="_blank">mouseenter</a>,
+                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/mousemove_event" target="_blank">mousemove</a>,
+                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseleave_event" target="_blank">mouseleave</a>,
+                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseup_event" target="_blank">mouseup</a>,
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:hover" target="_blank">click</a> and
+                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/dblclick_event" target="_blank">double click</a>
+                events. You don't have to use all of these, but they offer different information and opportunities for
+                designing feedback.
+            </li>
+
+            <li>
+                Make sure to add code comments in the appropriate places, giving brief detail to your design choices.
+                Your design doesn't have to use custom components, but you need to justify the choices you've made. For
+                example if you choose to use a CSS animation to spin your button, discuss why you chose to do so, and
+                details like what influenced the choice of rotational speed.
+            </li>
+
+            <li>
+                Finally don't forget to check your work in browsers - both Firefox and Chrome if you can.
+            </li>
+        </ol>
+    </section>
+
+</main>
+
+<footer>
+    <div class="headerFooterContainer">
+        <h3>created and maintained by <a href="https://patrickhase.xyz" target="_blank">Patrick McMahon</a></h3>
+    </div>
+</footer>
+
+</body>
+</html>
