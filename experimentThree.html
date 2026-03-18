@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Experiment Three - Mediated Expression</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- from Microsoft Windows 2.03 Paint -->
+    <!-- https://commons.wikimedia.org/wiki/File:Windows_2.03_PAINT_01.png -->
+    <link rel="icon" href="./assets/icons/favicon.png" type="image/png">
+</head>
+<body>
+<header>
+    <div class="headerFooterContainer">
+        <h1>Mediated Expression : Experiment Three</h1>
+        <h3>RMIT Digital Media Studio 2610</h3>
+    </div>
+</header>
+
+<main>
+
+    <section>
+        <h2>Mapping Experiment</h2>
+        <h3>Brief:</h3>
+        <p>
+            <!-- Style and add feedback to your single button synthesizer to make it an engaging experience. Don't add any -->
+            <!-- additional HTML elements, but instead experiment with CSS and JavaScript. -->
+            Experiment with a novel input mechanism to change the colour of shape generated from your Konva template.
+            This can use any of the HTML input elements <strong class="underlined"><em>except</em></strong> for the
+            color input.
+        </p>
+
+        <p>
+            While you <em>can</em> style your input, the main focus should be on experimenting with creative mapping and value
+            interpolation.
+        </p>
+    </section>
+
+    <section>
+        <h3>Instructions:</h3>
+        <ol>
+            <li>
+                In your file explorer find the konvaTemplate folder for the project folder created together in class.
+                Copy this folder into your studioWorkIndex website folder and rename it "mappingDesignExperiment".
+            </li>
+
+            <li>
+                We need to do some quick cleanup to make this work properly.
+                <ol type="a" style="margin-bottom: 0">
+                    <li>
+                        First delete the ".idea" folder
+                        <strong class="underlined">
+                            inside of this new feedbackDesignExperiment folder
+                        </strong>
+                        not the studioWorkIndex folder (only there on WebStorm).
+                    </li>
+                    <li>
+                        Then change the names of the style.css, and main.js to something specific like
+                        "mappingStyle.css" and "mappingMain.js".
+                    </li>
+                    <li>
+                        You'll also have to double-check the link and script import tags in the index.html file (in the
+                        feedbackDesignExperiment folder) to make sure they reference the new name.
+                    </li>
+                    <li>
+                        You can also delete the reset.css file inside of feedbackDesignExperiment and update the link
+                        href to "../reset.css" so it can find your reset inside of the main folder.
+                    </li>
+                </ol>
+            </li>
+
+            <li>
+                Add a link to your experiment on your work index home page using an a element. The href should be
+                <span style="white-space: nowrap;">"./mappingDesignExperiment"</span>.
+            </li>
+
+            <li>
+                Choose an input element with any
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input" target="_blank">type</a>
+                <strong class="underlined"><em>except</em></strong> for color. Look at the kind of information stored
+                within its value attribute, and design a way to interpolate it into a color value. Use code commenting to
+                sketch out the logic before implementing it using JavaScript.
+            </li>
+
+            <li>
+                Create a new function that takes the input's value when changed, interpolates it into a usable
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Colors/Color_values" target="_blank">
+                    CSS color value
+                </a>, and then sets the circleColour variable.
+            </li>
+
+            <li>
+                Remember there are many ways to write a colour value, but you should test that your input will always
+                produce a verified value.
+            </li>
+
+            <li>
+                Make sure to add code comments in the appropriate places, giving brief detail to your design choices.
+                For example if you choose to use the date input to select your colour, which part of the date value you
+                decided to use, and how you mapped that to a CSS color value.
+            </li>
+
+            <li>
+                <span class="underlined">This experiment is hard!!!</span> Try your best to get it working, but if you
+                run into errors or issues at least make sure to at least document your intended logic for changing one
+                value into another as a comment.
+            </li>
+
+            <li>
+                Finally don't forget to check your work in browsers - both Firefox and Chrome if you can.
+            </li>
+        </ol>
+    </section>
+
+</main>
+
+<footer>
+    <div class="headerFooterContainer">
+        <h3>created and maintained by <a href="https://patrickhase.xyz" target="_blank">Patrick McMahon</a></h3>
+    </div>
+</footer>
+
+</body>
+</html>
