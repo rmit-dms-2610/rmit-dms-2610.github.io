@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prototype Deployment Guide - Mediated Expression</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- from Microsoft Windows 2.03 Paint -->
+    <!-- https://commons.wikimedia.org/wiki/File:Windows_2.03_PAINT_01.png -->
+    <link rel="icon" href="./assets/icons/favicon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="headerFooterContainer">
+            <h1>Mediated Expression : Prototype Deployment Guide</h1>
+            <h3>RMIT Digital Media Studio 2610</h3>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <p>
+                This page contains a brief recap of deploying our prototype and final creative tool using Netlify.
+            </p>
+            <p>
+                While we switched to Neocities to publish our studioWorkIndex, we will return to using Netlify for our
+                actual tools. As discussed in class, we switched due to the restrictive credits, however if we set it up
+                carefully as per these instructions, the free deployments each month should be enough for our purposes.
+            </p>
+            <p>
+                Note: You have 300 free credits per month, and each deployment costs 15 credits. You can keep track in
+                Netlify's usage and billing tab, but I've found there is a couple of minute delay on updating the amount.
+            </p>
+            <hr>
+            <ol>
+                <li>
+                    <strong>Deploy with Netlify:</strong> <br>
+                    Navigate to <a href="https://www.netlify.com/" target="_blank">https://www.netlify.com/</a> in your browser
+                    and press log in, then select 'Log in with GitHub'. You'll have to authorise this with your GitHub account
+                    if it's your first time. Then make sure you're in the projects view (via tab on left) and select 'Add new
+                    project' then 'Import an existing project' then click GitHub and authorise the session. You should see a
+                    list of your repositories, select the appropriate one (whatever your studio project repo is called).
+                </li>
+
+                <li>
+                    <strong>Turning off auto publishing:</strong> <br>
+                    The next step is <mark>very important</mark> to stop eating up all your credits each time you update
+                    your git repo. <br>
+                    First navigate to your "Deploys" page from the menu on the left (blue arrow in the image below). Then
+                    turn off auto publishing via the button (underlined in red).
+                    <img src="./assets/images/autoDeploy.PNG" alt="turning off auto publishing">
+                    From now on pushing to our repo will not automatically update the deployment. You will see the updates
+                    in the log on this page, but you will notice that it won't be tagged with "published".
+                </li>
+                <li>
+                    <strong>Manually publish update:</strong> <br>
+                    Once you are happy with your prototype and want to update it at the deployed URL, navigate back to the
+                    "Deploys" page for the project (as seen above), and click on the latest deploy in the log. This page
+                    should have a button labelled "Publish deploy" which will update your URL. <br>
+                    Be careful to not overdo this, as mentioned you <mark>only have around 20 free deploys per month</mark>.
+                    This should be enough for our purposes, but it is limited.
+                </li>
+                <li>
+                    <strong>Next steps:</strong> <br>
+                    After we complete our Peer User Testing, we will convert this deploy to an archive of our prototype.
+                    I will cover this process in class and update these instructions at that time.
+                </li>
+                <li>
+                    <strong>If you have any issues with this process or are close to running out of credits please email me.</strong>
+                </li>
+            </ol>
+        </section>
+    </main>
+</body>
+</html>
