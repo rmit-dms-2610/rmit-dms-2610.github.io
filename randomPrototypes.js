@@ -38,6 +38,30 @@ let prototypeInfo = [
         name: "Iris",
         link: "https://forms.office.com/r/7JQgnVyDDe"
     },
+    {
+        name: "Arianna",
+        link: "https://forms.office.com/r/JFCtPMZEuu"
+    },
+    {
+        name: "Sami",
+        link: "https://forms.office.com/Pages/ResponsePage.aspx?id=cTYy0b7NF0S01L2yS1Exa_nVc6P2xHRIr5Sh9w-zsDZUM1c1RFVKUjA5Uk9JVFoxVFFGTFQxUVZIRi4u"
+    },
+    {
+        name: "Cecile",
+        link: "https://forms.office.com/Pages/ResponsePage.aspx?id=cTYy0b7NF0S01L2yS1Exaw2H6ASbFNRGp9C9z1vzUeBUQUdWV1lKSFlZWUhaN0ZGOUhDUzUxOEtCTy4u"
+    },
+    {
+        name: "Jannalyn",
+        link: "https://forms.office.com/r/TDA3gDb1X9"
+    },
+    {
+        name: "Elaine",
+        link: "https://forms.cloud.microsoft/r/Yyp75evXPv"
+    },
+    {
+        name: "Mino",
+        link: "https://forms.office.com/Pages/ResponsePage.aspx?id=cTYy0b7NF0S01L2yS1Exa5qINZp6o_VHi1BLm68flH1URE1QRU5NVzUxVjBGOUdNR1kySDlaUE44TS4u"
+    },
 ];
 
 let shuffledArray = shuffleArray(prototypeInfo);
