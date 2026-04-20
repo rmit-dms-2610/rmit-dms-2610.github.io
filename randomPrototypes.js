@@ -70,6 +70,10 @@ let prototypeInfo = [
         name: "Jamie",
         link: "https://forms.office.com/Pages/ResponsePage.aspx?id=cTYy0b7NF0S01L2yS1Exaz1ZPLDFZmpDngI4vfaaccVUODZIWlFUVTlLUkpJSDRFNVVBWENZVlhUSS4u"
     },
+    {
+        name: "Strawberry",
+        link: "https://forms.office.com/r/WQbEgZDTih"
+    },
 ];
 
 let shuffledArray = shuffleArray(prototypeInfo);
