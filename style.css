@@ -205,3 +205,19 @@ summary > h4 {
 .timelineCategory:not(:first-of-type) {
   margin-top: 1rem;
 }
+
+/*animated details*/
+.animatedDetails {
+  /*defined in js setup*/
+  height: var(--collapsed);
+  overflow: hidden;
+  transition: 300ms;
+}
+.animatedDetails[open] {
+  /*defined in js setup*/
+  height: var(--expanded);
+}
+
+summary h3 {
+  display: inline;
+}

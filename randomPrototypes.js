@@ -74,6 +74,14 @@ let prototypeInfo = [
         name: "Strawberry",
         link: "https://forms.office.com/r/WQbEgZDTih"
     },
+    {
+        name: "Zak",
+        link: "https://forms.office.com/r/WQbEgZDTih"
+    },
+    {
+        name: "Elias",
+        link: "https://forms.office.com/r/WQbEgZDTih"
+    },
 ];
 
 let shuffledArray = shuffleArray(prototypeInfo);
