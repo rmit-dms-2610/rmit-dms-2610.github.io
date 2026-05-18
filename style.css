@@ -221,3 +221,7 @@ summary > h4 {
 summary h3 {
   display: inline;
 }
+
+details img {
+  max-width: 50%;
+}
