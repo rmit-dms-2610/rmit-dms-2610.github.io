@@ -13,6 +13,7 @@ detailsElementList.forEach((detailsElement) => {
                    setHeight(detailsElement);
                    setHeight(detailsElement, true);
                    detailsElement.open = nowOpen;
+                   detailsElement.classList.add("animateTransition");
                }
            } else {
                let nowOpen = detailsElement.open;
@@ -20,6 +21,7 @@ detailsElementList.forEach((detailsElement) => {
                setHeight(detailsElement);
                setHeight(detailsElement, true);
                detailsElement.open = nowOpen;
+               detailsElement.classList.add("animateTransition");
            }
         });
     });

@@ -211,6 +211,8 @@ summary > h4 {
   /*defined in js setup*/
   height: var(--collapsed);
   overflow: hidden;
+}
+.animateTransition {
   transition: 300ms;
 }
 .animatedDetails[open] {
