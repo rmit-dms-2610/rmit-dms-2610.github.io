@@ -209,15 +209,15 @@ summary > h4 {
 /*animated details*/
 .animatedDetails {
   /*defined in js setup*/
-  height: var(--collapsed);
-  overflow: hidden;
+  /*height: var(--collapsed);*/
+  /*overflow: hidden;*/
 }
 .animateTransition {
-  transition: 300ms;
+  /*transition: 300ms;*/
 }
 .animatedDetails[open] {
   /*defined in js setup*/
-  height: var(--expanded);
+  /*height: var(--expanded);*/
 }
 
 summary h3 {
